@@ -153,3 +153,65 @@ button:hover {
     color: #7c746b;
     margin-bottom: 14px;
 }
+
+
+
+.delete-btn {
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #d96b5f;
+    color: white;
+    font-size: 13px;
+    width: fit-content;
+}
+
+.delete-btn:hover {
+    background: #b9564b;
+}
+
+.summary-item {
+    background: #f8f5f0;
+    border: 1px solid #dfe3d6;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.summary-name {
+    font-size: 15px;
+    color: #2b2f28;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.summary-price {
+    color: #6d533c;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .main-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        padding: 16px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .transaction-top {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+
