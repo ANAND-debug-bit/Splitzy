@@ -7,7 +7,7 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(to bottom right, #f5f1ea, #ebe3d8);
+    background: linear-gradient(to bottom right, #ebe3d8, #ebe3d8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,12 +31,12 @@ body {
 
 h1 {
     font-size: 44px;
-    color: #2b2f28;
+    color: #3a0d29;
     letter-spacing: -1px;
 }
 
 .sub-text {
-    color: #6b6f63;
+    color: #a3547e;
     margin-top: 6px;
     font-size: 16px;
     line-height: 25px;
@@ -46,28 +46,28 @@ h1 {
     background: rgba(255, 255, 255, 0.9);
     padding: 24px;
     border-radius: 18px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 30px rgba(255, 0, 140, 0.18);
 }
 
 .card h2 {
     font-size: 22px;
     margin-bottom: 18px;
-    color: #2b2f28;
+    color: #3a0d29;
 }
 
 input {
     width: 100%;
     padding: 14px;
     margin-bottom: 12px;
-    border: 1px solid #d2d6c8;
+    border: 1px solid #f3c2dd;
     border-radius: 10px;
     outline: none;
     font-size: 15px;
-    background: #f7f8f3;
+    background: #fdf2f8;
 }
 
 input:focus {
-    border-color: #7c8a6a;
+    border-color: #ff2e93;
     background: white;
 }
 
@@ -76,28 +76,28 @@ button {
     padding: 14px;
     border: none;
     border-radius: 10px;
-    background: #2b2f28;
+    background: #3a0d29;
     color: white;
     font-size: 15px;
     cursor: pointer;
 }
 
 button:hover {
-    background: #454a3d;
+    background: #e0157a;
 }
 
 .empty-text {
-    color: #7d8175;
+    color: #b56a91;
     font-size: 15px;
 }
 
 .person-item {
-    background: #f5f6f0;
-    border: 1px solid #ece5dc;
+    background: #fdf1f7;
+    border: 1px solid #f6d3e8;
     padding: 14px 16px;
     border-radius: 12px;
     margin-bottom: 12px;
-    color: #2b2f28;
+    color: #3a0d29;
     font-size: 15px;
 
     display: flex;
@@ -111,19 +111,19 @@ button:hover {
     border: none;
     border-radius: 50%;
     background: transparent;
-    color: #d96b5f;
+    color: #ff4d8d;
     font-size: 22px;
     cursor: pointer;
     padding: 0;
 }
 
 .remove-person-btn:hover {
-    background: #eee3dc;
+    background: #ffe0ee;
 }
 
 .transaction-item {
-    background: #f7f4ef;
-    border: 1px solid #e7dfd5;
+    background: #fdf3f9;
+    border: 1px solid #f5d6e9;
     padding: 16px;
     border-radius: 14px;
     margin-bottom: 14px;
@@ -138,19 +138,19 @@ button:hover {
 
 .transaction-title {
     font-size: 16px;
-    color: #2b2f28;
+    color: #3a0d29;
     font-weight: bold;
 }
 
 .transaction-amount {
-    color: #6d533c;
+    color: #c2308a;
     font-size: 15px;
     white-space: nowrap;
 }
 
 .transaction-info {
     font-size: 14px;
-    color: #7c746b;
+    color: #b06d94;
     margin-bottom: 14px;
 }
 
@@ -159,19 +159,19 @@ button:hover {
 .delete-btn {
     padding: 10px 14px;
     border-radius: 8px;
-    background: #d96b5f;
+    background: #ff4d8d;
     color: white;
     font-size: 13px;
     width: fit-content;
 }
 
 .delete-btn:hover {
-    background: #b9564b;
+    background: #d61f74;
 }
 
 .summary-item {
-    background: #f8f5f0;
-    border: 1px solid #dfe3d6;
+    background: #fdf2f8;
+    border: 1px solid #f6d9ea;
     padding: 15px;
     border-radius: 12px;
     margin-bottom: 12px;
@@ -179,13 +179,13 @@ button:hover {
 
 .summary-name {
     font-size: 15px;
-    color: #2b2f28;
+    color: #3a0d29;
     margin-bottom: 6px;
     font-weight: bold;
 }
 
 .summary-price {
-    color: #6d533c;
+    color: #c2308a;
     font-size: 14px;
 }
 
