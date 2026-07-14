@@ -64,3 +64,88 @@ let titleValue = expenseTitle.value.trim();
     expenseTitle.value = "";
     expenseAmount.value = "";
 };
+
+function renderPeople() {
+    peopleList.innerHTML = "";
+
+    if (people.length === 0) {
+        peopleList.innerHTML =
+            `<p class="empty-text">No people added yet.</p>`;
+
+        return;
+    }
+
+    for (let i = 0; i < people.length; i++) {
+        let personBox = document.createElement("div");
+
+        personBox.className = "person-item";
+
+        personBox.innerHTML = `
+            <span>${people[i]}</span>
+
+            <button class="remove-person-btn" onclick="removePerson(${i})">
+                ×
+            </button>
+        `;
+
+        peopleList.appendChild(personBox);
+    }
+}
+
+function renderExpenses() {
+    transactionList.innerHTML = "";
+
+    if (expenses.length === 0) {
+        transactionList.innerHTML =
+            `<p class="empty-text">No expenses added yet.</p>`;
+
+        return;
+    }
+
+    for (let i = 0; i < expenses.length; i++) {
+        let expenseBox = document.createElement("div");
+
+        expenseBox.className = "transaction-item";
+
+        expenseBox.innerHTML = `
+            <div class="transaction-top">
+                <span class="transaction-title">
+                    ${expenses[i].title}
+                </span>
+
+                <span class="transaction-amount">
+                    ₹${expenses[i].amount}
+                </span>
+            </div>
+
+            <div class="transaction-info">
+                Split equally between all members
+            </div>
+
+            <button class="delete-btn" onclick="deleteExpense(${i})">
+                Delete
+            </button>
+        `;
+
+        transactionList.appendChild(expenseBox);
+    }
+}
+
+function removePerson(index) {
+    people.splice(index, 1);
+
+    saveData();
+    renderPeople();
+    updateSummary();
+}
+
+function deleteExpense(index) {
+    expenses.splice(index, 1);
+
+    saveData();
+    renderExpenses();
+    updateSummary();
+}
+
+
+
