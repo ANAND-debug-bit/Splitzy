@@ -50,6 +50,12 @@
 
 <hr>
 
+
+
+<h3> AI use </h3>
+<p>none</p>
+<hr>
+
 <h2>TECH STACK</h2>
 
 <br>
