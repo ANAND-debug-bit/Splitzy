@@ -148,4 +148,45 @@ function deleteExpense(index) {
 }
 
 
+function updateSummary() {
+    summaryList.innerHTML = "";
+
+    if (people.length === 0 || expenses.length === 0) {
+        summaryList.innerHTML =
+            `<p class="empty-text">Expense summary will appear here.</p>`;
+
+        return;
+    }
+
+    let totalExpense = 0;
+
+    for (let i = 0; i < expenses.length; i++) {
+        totalExpense += expenses[i].amount;
+    }
+
+    let splitAmount = totalExpense / people.length;
+
+    for (let i = 0; i < people.length; i++) {
+        let summaryBox = document.createElement("div");
+
+        summaryBox.className = "summary-item";
+
+        summaryBox.innerHTML = `
+            <div class="summary-name">
+                ${people[i]}
+            </div>
+
+            <div class="summary-price">
+                Needs to pay ₹${splitAmount.toFixed(2)}
+            </div>
+        `;
+
+        summaryList.appendChild(summaryBox);
+    }
+}
+
+function saveData() {
+    localStorage.setItem("peopleData", JSON.stringify(people));
+    localStorage.setItem("expenseData", JSON.stringify(expenses));
+}
 
